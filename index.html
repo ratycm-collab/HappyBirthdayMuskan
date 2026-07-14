@@ -2,90 +2,327 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+    <title>Happy Birthday Muskan ❤️</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-<title>Happy Birthday Muskan ❤️</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div id="particles"></div>
+<div id="stars"></div>
 
-<section class="hero">
+<!-- ================= BOOT SCREEN ================= -->
 
-<h1 class="typing"></h1>
+<div id="boot-screen">
 
-<p class="subtitle">
+<pre id="boot-text">
+
+Booting MuskanOS 24.0...
 
 Loading Love Engine...
 
+Connecting To Heart Database...
+
+Searching Memories...
+
+✔ Tinder Match Found
+
+✔ Long Distance Activated
+
+✔ Kolkata Airport Loaded
+
+✔ Goa Memories Restored
+
+✔ Gokarna Trip Restored
+
+✔ Coffee Addiction Loaded
+
+✔ Sushi Addiction Loaded
+
+✔ Doctor Mode Enabled
+
+✔ Love Status : Infinite
+
+Launching...
+
+</pre>
+
+</div>
+
+<!-- ================= MUSIC ================= -->
+
+<audio id="bgMusic" loop>
+    <source src="music/daryaa.mp3" type="audio/mp3">
+</audio>
+
+<button id="musicBtn">
+
+🎵
+
+</button>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+<div class="logo">
+
+MuskanOS ❤️
+
+</div>
+
+<ul>
+
+<li><a href="#hero">Home</a></li>
+
+<li><a href="#story">Our Story</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#doctor">Doctor</a></li>
+
+<li><a href="#future">Future</a></li>
+
+<li><a href="#letter">Letter</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section id="hero">
+
+<h1>
+
+Happy Birthday
+
+<span>
+
+Dr. Muskan ❤️
+
+</span>
+
+</h1>
+
+<p>
+
+The best software I never had to debug.
+
 </p>
 
-<button onclick="startWebsite()">
+<button id="startBtn">
 
-Run Birthday Program
+Begin Our Story
 
 </button>
 
 </section>
 
-<section id="content">
+<!-- ================= STORY ================= -->
 
-<div class="card">
+<section id="story">
 
-<h2>if(MyHeart == "Code")</h2>
+<h2>
 
-<pre>
-while(alive){
+How It All Started
 
-love(Muskan);
+</h2>
 
-respect(Muskan);
+<div class="glass">
 
-care(Muskan);
+<h3>
 
-annoy(Muskan);
+3rd May 2018
 
-repeat();
+</h3>
 
-}
-</pre>
+<p>
+
+One random Tinder match.
+
+One random message.
+
+"Will you give 100%? I'll give 100%, even if it's long distance."
+
+Little did I know...
+
+that one sentence would become the biggest promise of my life.
+
+</p>
 
 </div>
 
-<div class="card">
+<div class="glass">
 
-<h2>Doctor Report 🩺</h2>
+<h3>
+
+31st January 2019
+
+</h3>
+
+<p>
+
+Kolkata Airport.
+
+The first time I saw you.
+
+I remember playing
+
+<strong>Daryaa</strong>
+
+and somehow...
+
+that song has never sounded the same again.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>
+
+5th December 2019
+
+</h3>
+
+<p>
+
+The day you officially became my girlfriend.
+
+The day my favourite person finally became my favourite chapter.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>
+
+COVID Days
+
+</h3>
+
+<p>
+
+The whole world stopped.
+
+But somehow...
+
+our story kept moving.
+
+Even when we couldn't travel,
+
+our hearts never stayed apart.
+
+</p>
+
+</div>
+
+<div class="glass">
+
+<h3>
+
+Goa ❤️
+
+</h3>
+
+<p>
+
+15 days.
+
+Endless rain.
+
+People would've cancelled.
+
+We explored anyway.
+
+Because Goa was never about beaches.
+
+It was always about you.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+<h2>
+
+Our Memories
+
+</h2>
+
+<div class="gallery">
+
+<img src="images/muskan.png">
+
+<img src="images/muskan1.png">
+
+<img src="images/muskan2.png">
+
+<img src="images/muskan3.png">
+
+<img src="images/muskan4.png">
+
+<img src="images/muskan5.png">
+
+<img src="images/muskan6.png">
+
+<img src="images/muskan7.png">
+
+</div>
+
+</section>
+
+<!-- ================= DOCTOR ================= -->
+
+<section id="doctor">
+
+<h2>
+
+Doctor.exe
+
+</h2>
+
+<div class="glass">
+
+<h3>
+
+Patient Report
+
+</h3>
 
 <pre>
 
-Patient : Raty
+Patient Name : Raty
 
-Symptoms :
-
-✔ Can't stop smiling
-
-✔ Misses one doctor
-
-✔ Heart races after notifications
+Pulse : Increases when Muskan texts
 
 Diagnosis :
 
-Hopelessly in love
+Hopelessly In Love
 
 Prescription :
 
-Muskan
+Coffee ☕
+
+Sushi 🍣
+
+One Hug Daily ❤️
 
 Lifetime
 
@@ -93,105 +330,195 @@ Lifetime
 
 </div>
 
-<div class="card">
+<div class="glass">
 
-<h2>System Log</h2>
+<h3>
 
-<pre>
+Achievements
 
-Finding Muskan...
+</h3>
 
-Success
+<ul>
 
-Finding Happiness...
+<li>✔ Future Doctor</li>
 
-Success
+<li>✔ Beautiful Singer</li>
 
-Finding Peace...
+<li>✔ Creative Soul</li>
 
-Success
+<li>✔ Professional Overthinker</li>
 
-Finding Someone Better...
+<li>✔ World's Best Girlfriend</li>
 
-ERROR 404
+<li>✔ Still Somehow Loves This Idiot</li>
 
-Not Found.
-
-</pre>
+</ul>
 
 </div>
 
-<div class="card letter">
+</section>
 
-<h2>To My Favorite Doctor ❤️</h2>
+<!-- ================= LETTER ================= -->
+
+<section id="letter">
+
+<h2>
+
+A Letter To My Home
+
+</h2>
+
+<div class="glass letter">
 
 <p>
 
-Happy Birthday Muskan.
+Happy Birthday Musu...
 
-You're probably the only person capable of treating patients all day and still healing me without realizing it.
+Out of all the people in this world,
 
-You're creative.
+I'm grateful life somehow led me to you.
 
-You sing beautifully.
+You became my first love.
 
-You overthink more than any AI algorithm ever could.
+My first kiss.
 
-But that's okay...
+My first heartbreak.
 
-because I'll happily spend forever reminding you that everything will be okay.
+My first patch-up.
 
-Thank you for loving me.
+My first home.
 
-Thank you for forgiving me even when I didn't deserve it.
+And if life is kind to me...
 
-I don't think I say it enough...
+I want you to be my last everything too.
 
-but you've made me a better person.
+Thank you...
 
-If relationships had software updates...
+for choosing me.
 
-you've always inspired mine.
+Thank you...
 
-Version after version,
+for believing in me.
 
-I'm trying to become someone worthy of you.
+Thank you...
 
-Happy Birthday to my favorite human.
+for forgiving me more times than I deserved.
 
-I love you.
+Every time you forgave me...
 
-Forever.
+you gave us another chance.
 
-❤️
+I'll never stop being thankful for that.
 
 </p>
 
 </div>
 
-<div class="card">
+</section>
 
-<h2>Developer Console</h2>
+<!-- ================= FUTURE ================= -->
 
-<pre>
+<section id="future">
 
-> compile love.cpp
+<h2>
 
-Compilation Successful.
+Future.exe
 
-Warnings : 0
+</h2>
 
-Errors : 0
+<div class="glass">
 
-Result :
+<p>
 
-Happy Birthday Dr. Muskan ❤️
+I know I can't buy you everything today.
 
-</pre>
+I can't give you every trip,
+
+every coffee,
+
+every sushi date,
+
+every dream,
+
+every country,
+
+or every luxury.
+
+But I promise you this...
+
+Every line of code I write...
+
+Every late night I stay awake...
+
+Every dream I chase...
+
+has your name hidden somewhere inside it.
+
+One day...
+
+I'll look at you and say
+
+"Pack your bags."
+
+"We're going wherever you want."
+
+No compromises.
+
+Just us.
+
+Forever.
+
+</p>
 
 </div>
 
 </section>
+
+<!-- ================= FINAL ================= -->
+
+<section id="ending">
+
+<h1>
+
+System Status
+
+</h1>
+
+<pre>
+
+Relationship : Forever
+
+Distance : 0 km (Soon ❤️)
+
+Love : ∞
+
+Marriage.exe : Loading...
+
+Developer :
+
+Raty ❤️
+
+</pre>
+
+<button id="proposal">
+
+Keep Choosing Me Forever ❤️
+
+</button>
+
+</section>
+
+<footer>
+
+Made with ❤️ by
+
+<strong>Raty</strong>
+
+for the most beautiful doctor in the universe,
+
+Muskan.
+
+</footer>
 
 <script src="script.js"></script>
 
