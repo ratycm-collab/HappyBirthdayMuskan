@@ -338,3 +338,52 @@ element.innerHTML=count.toLocaleString()+"+";
 animateCounter("km",10000);
 
 animateCounter("flights",25);
+/*=====================================
+       LOVE COUNTER
+======================================*/
+
+function updateLoveCounter(){
+
+    // Official relationship date
+    const startDate = new Date("2019-12-05T00:00:00");
+
+    const now = new Date();
+
+    let years = now.getFullYear() - startDate.getFullYear();
+    let months = now.getMonth() - startDate.getMonth();
+    let days = now.getDate() - startDate.getDate();
+
+    if(days < 0){
+        months--;
+
+        const previousMonth =
+            new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+
+        days += previousMonth;
+    }
+
+    if(months < 0){
+        years--;
+        months += 12;
+    }
+
+    const diff = now - startDate;
+
+    const totalSeconds = Math.floor(diff / 1000);
+
+    const hours = Math.floor(totalSeconds / 3600) % 24;
+    const minutes = Math.floor(totalSeconds / 60) % 60;
+    const seconds = totalSeconds % 60;
+
+    document.getElementById("years").innerHTML = years;
+    document.getElementById("months").innerHTML = months;
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+}
+
+updateLoveCounter();
+
+setInterval(updateLoveCounter,1000);
