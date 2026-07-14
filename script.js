@@ -284,3 +284,28 @@ function launchConfetti() {
     }
 
 }
+/* ==========================================
+      Timeline Animation
+========================================== */
+
+const timelineItems=document.querySelectorAll(".timeline-item");
+
+function showTimeline(){
+
+timelineItems.forEach(item=>{
+
+const top=item.getBoundingClientRect().top;
+
+if(top<window.innerHeight-120){
+
+item.classList.add("show");
+
+}
+
+});
+
+}
+
+window.addEventListener("scroll",showTimeline);
+
+showTimeline();
