@@ -342,49 +342,40 @@ animateCounter("flights",25);
        LOVE COUNTER
 ======================================*/
 
-function updateLoveCounter(){
+function updateLoveCounter() {
 
-    // Official relationship date
-    const startDate = new Date("2019-12-05T00:00:00");
-
+    const start = new Date(2019, 11, 5); // Month is 0-based (11 = December)
     const now = new Date();
 
-    let years = now.getFullYear() - startDate.getFullYear();
-    let months = now.getMonth() - startDate.getMonth();
-    let days = now.getDate() - startDate.getDate();
+    let years = now.getFullYear() - start.getFullYear();
+    let months = now.getMonth() - start.getMonth();
+    let days = now.getDate() - start.getDate();
 
-    if(days < 0){
+    if (days < 0) {
         months--;
-
-        const previousMonth =
-            new Date(now.getFullYear(), now.getMonth(), 0).getDate();
-
-        days += previousMonth;
+        const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+        days += prevMonth;
     }
 
-    if(months < 0){
+    if (months < 0) {
         years--;
         months += 12;
     }
 
-    const diff = now - startDate;
+    const diff = now - start;
 
-    const totalSeconds = Math.floor(diff / 1000);
+    const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+    const minutes = Math.floor(diff / (1000 * 60)) % 60;
+    const seconds = Math.floor(diff / 1000) % 60;
 
-    const hours = Math.floor(totalSeconds / 3600) % 24;
-    const minutes = Math.floor(totalSeconds / 60) % 60;
-    const seconds = totalSeconds % 60;
-
-    document.getElementById("years").innerHTML = years;
-    document.getElementById("months").innerHTML = months;
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
-
+    document.getElementById("years").textContent = years;
+    document.getElementById("months").textContent = months;
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
 }
 
 updateLoveCounter();
 
 setInterval(updateLoveCounter,1000);
-console.log("Script Loaded Successfully");
