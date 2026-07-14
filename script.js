@@ -309,3 +309,32 @@ item.classList.add("show");
 window.addEventListener("scroll",showTimeline);
 
 showTimeline();
+function animateCounter(id,target){
+
+let element=document.getElementById(id);
+
+let count=0;
+
+let speed=40;
+
+let timer=setInterval(()=>{
+
+count+=150;
+
+if(count>=target){
+
+count=target;
+
+clearInterval(timer);
+
+}
+
+element.innerHTML=count.toLocaleString()+"+";
+
+},speed);
+
+}
+
+animateCounter("km",10000);
+
+animateCounter("flights",25);
