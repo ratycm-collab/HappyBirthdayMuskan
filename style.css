@@ -567,3 +567,492 @@ bottom:20px;
 }
 
 }
+/* ==========================================
+        LOVE LETTER SECTION
+========================================== */
+
+.letter{
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.letter p{
+
+    font-size:22px;
+
+    line-height:2.3;
+
+    color:#f8fafc;
+
+}
+
+.letter p::first-letter{
+
+    font-size:60px;
+
+    color:#60a5fa;
+
+    font-weight:bold;
+
+}
+
+/* ==========================================
+          STORY CARDS
+========================================== */
+
+#story{
+
+    position:relative;
+
+}
+
+#story .glass{
+
+    opacity:0;
+
+    transform:translateY(100px);
+
+    transition:1s;
+
+}
+
+#story .glass.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+         TIMELINE
+========================================== */
+
+.timeline{
+
+    width:100%;
+
+    position:relative;
+
+    margin-top:80px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#60a5fa;
+
+}
+
+.timeline-item{
+
+    width:45%;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.08);
+
+    margin-bottom:60px;
+
+    position:relative;
+
+}
+
+.timeline-item:nth-child(even){
+
+    margin-left:auto;
+
+}
+
+.timeline-item::after{
+
+    content:"";
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#60a5fa;
+
+    position:absolute;
+
+    top:40px;
+
+}
+
+.timeline-item:nth-child(odd)::after{
+
+    right:-52px;
+
+}
+
+.timeline-item:nth-child(even)::after{
+
+    left:-52px;
+
+}
+
+/* ==========================================
+       IMAGE GALLERY
+========================================== */
+
+.gallery{
+
+    perspective:1000px;
+
+}
+
+.gallery img{
+
+    transition:0.6s;
+
+}
+
+.gallery img:hover{
+
+    transform:
+
+    rotateY(8deg)
+
+    scale(1.08);
+
+}
+
+/* ==========================================
+         HEARTS
+========================================== */
+
+.heart{
+
+    position:fixed;
+
+    color:#ff4d6d;
+
+    animation:floatHeart 8s linear forwards;
+
+    pointer-events:none;
+
+    z-index:999;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0) scale(.5);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) scale(2);
+
+opacity:0;
+
+}
+
+}
+
+/* ==========================================
+          PROPOSAL BUTTON
+========================================== */
+
+#proposal{
+
+    margin-top:60px;
+
+    font-size:22px;
+
+    padding:22px 50px;
+
+    background:linear-gradient(
+
+    135deg,
+
+    #ec4899,
+
+    #2563eb
+
+    );
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.05);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* ==========================================
+          PHOTO LIGHTBOX
+========================================== */
+
+.lightbox{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    left:0;
+
+    top:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.92);
+
+    z-index:9999;
+
+}
+
+.lightbox img{
+
+    max-width:85%;
+
+    max-height:90%;
+
+    border-radius:20px;
+
+}
+
+/* ==========================================
+         COFFEE CARD
+========================================== */
+
+.coffee-card{
+
+background:linear-gradient(
+
+135deg,
+
+#7c3aed,
+
+#2563eb
+
+);
+
+padding:40px;
+
+border-radius:25px;
+
+text-align:center;
+
+margin:60px auto;
+
+max-width:800px;
+
+}
+
+.coffee-card h2{
+
+margin-bottom:25px;
+
+}
+
+.coffee-card p{
+
+font-size:22px;
+
+}
+
+/* ==========================================
+         SUSHI CARD
+========================================== */
+
+.sushi-card{
+
+background:linear-gradient(
+
+135deg,
+
+#0ea5e9,
+
+#2563eb
+
+);
+
+padding:40px;
+
+border-radius:25px;
+
+margin:60px auto;
+
+max-width:800px;
+
+text-align:center;
+
+}
+
+/* ==========================================
+       DOCTOR SECTION
+========================================== */
+
+#doctor ul{
+
+margin-top:30px;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:25px;
+
+}
+
+#doctor li{
+
+list-style:none;
+
+padding:18px;
+
+border-radius:15px;
+
+background:rgba(255,255,255,.08);
+
+transition:.3s;
+
+}
+
+#doctor li:hover{
+
+transform:translateY(-6px);
+
+}
+
+/* ==========================================
+        ENDING
+========================================== */
+
+#ending{
+
+text-align:center;
+
+min-height:90vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+}
+
+#ending h1{
+
+font-size:70px;
+
+margin-bottom:30px;
+
+}
+
+#ending pre{
+
+font-size:20px;
+
+margin-top:20px;
+
+margin-bottom:40px;
+
+}
+
+/* ==========================================
+      SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#08111f;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#60a5fa;
+
+border-radius:20px;
+
+}
+
+/* ==========================================
+         FADE ANIMATION
+========================================== */
+
+.fade{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1.2s;
+
+}
+
+.fade.visible{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
