@@ -387,3 +387,4 @@ function updateLoveCounter(){
 updateLoveCounter();
 
 setInterval(updateLoveCounter,1000);
+console.log("Script Loaded Successfully");
