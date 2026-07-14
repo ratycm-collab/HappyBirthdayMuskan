@@ -1056,3 +1056,34 @@ opacity:1;
 transform:translateY(0);
 
 }
+/*========================================
+      TIMELINE ANIMATION
+========================================*/
+
+.timeline-item{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1s ease;
+
+}
+
+.timeline-item.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+.timeline-item:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+
+0 25px 60px rgba(37,99,235,.35);
+
+}
